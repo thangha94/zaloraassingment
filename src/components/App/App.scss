@@ -1,0 +1,47 @@
+@import '../../styles/config';
+
+.app {
+  min-width: 500px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+
+  height: 100vh;
+
+  .header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    height: 50px;
+    margin: 10px 0;
+
+    .header-input {
+      flex: 1;
+      height: 30px;
+      margin-right: 20px;
+      padding: 10px;
+    }
+    .header-submit {
+      width: 100px;
+      height: 32px;
+      border: 1px solid gray;
+    }
+  }
+  .invalid-message {
+    display: none;
+  }
+  .invalid-message.active {
+    display: inline;
+    color: red;
+    position: fixed;
+    top: 45px;
+    font-size: 14px;
+    margin-left: 10px;
+  }
+  .content {
+    background-color: $mainColor;
+    width: 100%;
+    height: calc(100% - 50px);
+  }
+}
